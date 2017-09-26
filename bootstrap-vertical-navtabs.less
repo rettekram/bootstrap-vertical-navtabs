@@ -1,0 +1,70 @@
+/**
+ * Bootstrap Vertical Navtabs
+ * 
+ */
+.vertical-navtabs {
+
+	.nav-tabs {
+		float: left;
+		border-bottom: 0;
+
+		li {
+			float: none;
+			margin: 0;
+
+			a {
+				background-color: #333;
+				border: 0;
+				border-radius: 0;
+				margin-right: 0;
+
+				&:hover {
+					background-color: #666;
+				}
+			}
+
+			.glyphicon {
+				color: #fff;
+			}
+
+			&.active {
+
+				a {
+					background-color: #fff;
+				}
+
+				.glyphicon {
+					color: #333;
+				}
+			}
+		}
+	}
+
+	.nav-tabs>li.active>a, 
+	.nav-tabs>li.active>a:hover, 
+	.nav-tabs>li.active>a:focus {
+		border: 0;
+	}
+
+	.tab-content {
+		margin-left: 44px;
+
+		.tab-pane {
+			background-color: #fff;
+			padding: 1.6em;
+			overflow-y: auto;
+
+			.active { 
+				display: block;
+			}
+		}
+	}
+
+	&.right {
+
+		.nav-tabs {
+			float: right;
+		}
+	}
+
+}
